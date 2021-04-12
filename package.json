@@ -1,0 +1,51 @@
+{
+  "name": "dogehouse-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/dogehouse-bot.js",
+  "bin": "dist/dogehouse-bot.js",
+  "repository": "",
+  "author": "  <>",
+  "license": "MIT",
+  "private": false,
+  "generator": {
+    "command": "create-typescript-template-app",
+    "version": "1.0.3",
+    "repo": "[object Object]",
+    "date": "1618244606705"
+  },
+  "keywords": [],
+  "scripts": {
+    "compile": "webpack",
+    "compile:prod": "webpack --mode=production",
+    "compile:watch": "webpack --watch",
+    "start": "node dist/dogehouse-bot.js",
+    "clean": "rimraf bin dist *.log log docs",
+    "clean:all": "rimraf bin dist *.log log docs node_modules yarn.lock",
+    "build": "yarn compile:prod && pkg --out-path bin .",
+    "docs": "typedoc --out ./docs --target ES3 --module commonjs --name \"dogehouse-bot\" --mode modules --exclude \"**/_*.ts\"",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "@types/node": "^14.14.37",
+    "jest": "^26.6.3",
+    "jest-extended": "^0.11.5",
+    "jest-junit": "^12.0.0",
+    "jest-raw-loader": "^1.0.1",
+    "ts-loader": "^8.1.0",
+    "tslint": "^6.1.3",
+    "tslint-loader": "^3.5.4",
+    "typedoc": "^0.20.35",
+    "typedoc-plugin-external-module-name": "^4.0.6",
+    "typedoc-plugin-internal-external": "^2.2.0",
+    "typedoc-plugin-single-line-tags": "^1.0.0",
+    "typescript": "^4.2.4",
+    "uglify-js": "^3.13.4",
+    "webpack": "^5.31.2",
+    "webpack-bundle-analyzer": "^4.4.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-node-externals": "^2.5.2"
+  }
+}
