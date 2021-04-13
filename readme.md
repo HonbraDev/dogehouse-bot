@@ -25,10 +25,11 @@ You can also bundle it into an executable for quick production deploys.
 
 ## How to run
 
-1. Clone this repository. I recommend using [GitHub Desktop](https://desktop.github.com) ([click here](x-github-client://openRepo/https://github.com/HonbraDev/dogehouse-bot) to clone).
-2. Run `yarn` (you can use npm too, but this project was made for Yarn)
-3. Populate `.env` with your bot tokens
-4. Run `yarn compile:prod`
-5. Run `yarn start`
+1. Generate this template using GitHub. (<https://github.com/HonbraDev/dogehouse-bot/generate>)
+2. (x-github-client://openRepo/https://github.com/HonbraDev/dogehouse-bot) to clone).
+3. Run `yarn` (you can use npm too, but this project was made for Yarn)
+4. Populate `.env` with your bot tokens
+5. Run `yarn compile:prod`
+6. Run `yarn start`
 
 The bot should join the biggest room and say hello.
