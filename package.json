@@ -5,13 +5,13 @@
   "main": "dist/dogehouse-bot.js",
   "bin": "dist/dogehouse-bot.js",
   "repository": "",
-  "author": "  <>",
+  "author": "",
   "license": "MIT",
   "private": false,
   "generator": {
     "command": "create-typescript-template-app",
     "version": "1.0.3",
-    "repo": "[object Object]",
+    "repo": "",
     "date": "1618244606705"
   },
   "keywords": [],
@@ -47,5 +47,9 @@
     "webpack-bundle-analyzer": "^4.4.0",
     "webpack-cli": "^4.6.0",
     "webpack-node-externals": "^2.5.2"
+  },
+  "dependencies": {
+    "@dogehouse/kebab": "^0.2.6",
+    "dotenv": "^8.2.0"
   }
 }
