@@ -1,12 +1,12 @@
 import { MessageToken, stringToToken } from "@dogehouse/kebab";
 import { client } from "../wrappers/dogehouse";
 
+type QueueInput = MessageToken[] | string;
+
 type QueueMessage = {
-  content: MessageToken[] | string;
+  content: QueueInput;
   whisperedTo?: string[];
 };
-
-type QueueInput = MessageToken[] | string;
 
 let messageQueue: QueueMessage[] = [];
 

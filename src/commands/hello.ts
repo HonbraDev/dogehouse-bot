@@ -1,10 +1,10 @@
-import Command from "../utils/command";
+import Command from "../typings/command";
 
-const hello = new Command({
+const command: Command = {
   invoker: ".hello",
   callback: (msg) => {
     msg.reply("Hi!");
   },
-});
+};
 
-export default hello;
+export default command;

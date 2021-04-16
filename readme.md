@@ -14,7 +14,10 @@ You can also bundle it into an executable for quick production deploys.
 
 - [x] Compiling
 - [x] Wrapper for kebab (so you can access it in any file)
-- [ ] Commands
+- Commands
+  - [x] Basic
+  - [ ] Props
+- [x] Custom message wrapper
 - Proper logging
   - [x] Stdout (console)
   - [ ] File
