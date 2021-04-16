@@ -2,10 +2,13 @@
 import { raw, wrap, Wrapper } from "@dogehouse/kebab";
 const { connect } = raw;
 
-// @ts-expect-error
-let client: Wrapper = null;
+let client: Wrapper;
 
 const init = async (token: string, refreshToken: string) =>
-  (client = wrap(await connect(token, refreshToken, {})));
+  (client = wrap(
+    await connect(token, refreshToken, {
+      onConnectionTaken: () => console.log("Get hacked mate"),
+    })
+  ));
 
 export { client, init };

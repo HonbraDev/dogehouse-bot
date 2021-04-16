@@ -27,7 +27,7 @@ You can also bundle it into an executable for quick production deploys.
 
 1. Generate this template using GitHub. (<https://github.com/HonbraDev/dogehouse-bot/generate>)
 2. Run `yarn` (you can use npm too, but this project was made for Yarn)
-3. Populate `.env` with your bot tokens
+3. Populate `.env` with your bot tokens (DOGEHOUSE_TOKEN and DOGEHOUSE_REFRESH_TOKEN)
 4. Run `yarn compile:prod`
 5. Run `yarn start`
 

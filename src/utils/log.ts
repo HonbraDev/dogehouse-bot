@@ -9,6 +9,7 @@ const log = async (message: string) => {
     }.${now.getFullYear()} @ ${now.getHours()}:${now.getMinutes()}.${now.getSeconds()}] ${message}`;
 
   console.log(parsedMessage);
+  console.log(message);
   // TODO: Implement proper logging
 };
 

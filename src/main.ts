@@ -1,5 +1,6 @@
 /* This is the main file. This defines the workflow of our bot. */
 import { stringToToken } from "@dogehouse/kebab";
+import chatHandler from "./utils/chatHandler";
 import log from "./utils/log";
 import { init } from "./wrappers/dogehouse";
 
@@ -21,7 +22,9 @@ const main = async () => {
     const room = rooms[0];
 
     /* now we join the room */
-    const info = await client.query.joinRoomAndGetInfo(room.id);
+    const info = await client.query.joinRoomAndGetInfo(
+      "3eb52083-d3f1-4bbe-8bf6-1211ba62bb78"
+    );
 
     /* handle errors and make the code simpler */
     if ("error" in info) throw info.error;
@@ -37,6 +40,8 @@ const main = async () => {
     client.mutation.sendRoomChatMsg(
       stringToToken("Hello! 👋 I am your new bot.")
     );
+
+    client.subscribe.newChatMsg(({ msg }) => chatHandler(msg));
   } catch (e) {
     log(e);
   }
