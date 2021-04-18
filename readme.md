@@ -16,7 +16,7 @@ You can also bundle it into an executable for quick production deploys.
 - [x] Wrapper for kebab (so you can access it in any file)
 - Commands
   - [x] Basic
-  - [ ] Props
+  - [x] Props
 - [x] Custom message wrapper
 - Proper logging
   - [x] Stdout (console)

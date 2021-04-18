@@ -1,8 +1,12 @@
 import { SimpleMessage } from "../wrappers/message";
 
+type CommandProps = "string" | "number";
+
 type Command = {
   invoker: string;
-  callback: (msg: SimpleMessage) => any;
+  args: CommandProps[];
+  callback: (msg: SimpleMessage, props: any) => any;
 };
 
 export default Command;
+export { CommandProps };
