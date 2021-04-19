@@ -1,6 +1,6 @@
 import { SimpleMessage } from "../wrappers/message";
 
-type CommandProps = "string" | "number";
+type CommandProps = "string" | "number" | "user";
 
 type Command = {
   invoker: string;
