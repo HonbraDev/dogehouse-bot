@@ -20,8 +20,8 @@ You can also bundle it into an executable for quick production deploys.
 - [x] Custom message wrapper
 - Proper logging
   - [x] Stdout (console)
-  - [ ] File
-    - [ ] Make it not crap itself when the logs don't exist yet
+  - [x] File
+    - [x] Make it not crap itself when the logs don't exist yet
 - [ ] Error handling
 - [ ] Comments
 - [ ] Tests?
