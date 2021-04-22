@@ -1,4 +1,4 @@
-import { NewRoomDetailsResponse, Room } from "@dogehouse/kebab";
+import { NewRoomDetailsResponse } from "@dogehouse/kebab";
 import log from "../utils/log";
 
 const roomChangeHandler = async (room: NewRoomDetailsResponse) =>

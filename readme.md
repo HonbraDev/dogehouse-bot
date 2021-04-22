@@ -22,7 +22,8 @@ You can also bundle it into an executable for quick production deploys.
   - [x] Stdout (console)
   - [x] File
     - [x] Make it not crap itself when the logs don't exist yet
-- [ ] Error handling
+- [x] Error handling
+- [ ] Docs
 - [ ] Comments
 - [ ] Tests?
 
