@@ -7,7 +7,7 @@
   "repository": "",
   "author": "",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "generator": {
     "command": "create-typescript-template-app",
     "version": "1.0.3",
