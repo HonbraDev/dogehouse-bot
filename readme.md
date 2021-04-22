@@ -25,7 +25,6 @@ You can also bundle it into an executable for quick production deploys.
 - [x] Error handling
 - [ ] Docs
 - [ ] Comments
-- [ ] Tests?
 
 ## How to run
 
