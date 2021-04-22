@@ -1,4 +1,3 @@
-/* This wrapper allows us to call the library in any file */
 import { raw, wrap, Wrapper } from "@dogehouse/kebab";
 import log from "../utils/log";
 const { connect } = raw;
